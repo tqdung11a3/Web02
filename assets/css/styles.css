@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* COMMON */
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    padding: 11px 16px;
+    border-radius: 999px;
+    background: #171100;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 175%; /* 175% */
+}
+
+/* HEADER */
+.header {
+    background: #fffcf4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -8px;
+    z-index: 1;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 44px 0 8px;
+}
+
+.header .nav {
+    margin-left: auto;
+}
+
+.header .nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.header ul a {
+    padding: 8px 21px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 175%; /* 175% */
+}
+
+.header .nav a:hover,
+.header li.active a {
+    position: relative;
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+    bottom: 6px;
+    left: 21px;
+}
+
+.header .action {
+    margin-left: 49px;
+}
+
+.header .action .sign-up-btn {
+    min-width: 144px;
+}
+
+/* HERO */
+.hero {
+    background: #fffcf4;
+    padding-top: 72px;
+    padding-bottom: 65px;
+}
+
+.hero .content > .body {
+    display: flex;
+}
+
+.hero .courses-block {
+    position: relative;
+}
+
+.hero .courses-block {
+    width: 48%;
+}
+
+.hero .info {
+    width: 52%;
+}
+
+.courses-block .lesson {
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.courses-block .courses-info {
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    width: 270px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.courses-block .courses-info .body {
+    padding: 28px 24px;
+}
+
+.courses-block .courses-info .line {
+    display: flex;
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.courses-block .courses-info .body .line:first-child {
+    margin-top: 0;
+}
+
+.courses-block .courses-info .line span {
+    display: block;
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 185.714%; /* 185.714% */
+}
+
+.courses-block .courses-info .line .emphasize {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%; /* 166.667% */
+}
+
+.hero .info .body {
+    padding: 64px 0 0 130px;
+}
+
+.info .body .heading {
+    color: #171100;
+
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 117.241%; /* 117.241% */
+    letter-spacing: -1.16px;
+}
+
+.info .body .desc {
+    margin-top: 22px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%; /* 166.667% */
+}
+
+.info .body .line {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 38px;
+}
+
+.info .body .line .btn {
+    min-width: 180px;
+    padding: 18px 16px;
+    background: #ffb900;
+}
+
+.info .body .line .watch-video {
+    margin-left: 28px;
+    border: none;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.info .watch-video .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.info .watch-video span {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 166.667%; /* 166.667% */
+}
+
+.info .recent {
+    margin-top: 48px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%; /* 166.667% */
+}
+
+.info .line:last-child {
+    display: flex;
+    gap: 28px;
+    margin-top: 8px;
+}
+
+.info .line:last-child strong {
+    color: #171100;
+    padding-right: 8px;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 122.727%; /* 122.727% */
+}
