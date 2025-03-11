@@ -271,6 +271,7 @@ a {
 .design .body {
     position: relative;
     padding-top: 200px;
+    padding-bottom: 65px;
 }
 
 .design .body > .heading {
@@ -402,4 +403,79 @@ a {
 .design .btn:hover {
     background: #ffb900;
     cursor: pointer;
+}
+
+/* FEEDBACK */
+.feedback {
+    margin-top: 135px;
+    background: #2e2100;
+    padding: 96px 0;
+}
+
+.feedback .feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback .feedback-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.feedback .feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback .feedback-item .name {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 141.667%; /* 141.667% */
+}
+
+.feedback .feedback-item .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 185.714%; /* 185.714% */
+}
+
+.feedback .feedback-item .dots {
+    margin-top: 28px;
+    display: flex;
+    gap: 6px;
+}
+
+.feedback .feedback-item .dots .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+}
+
+.feedback .feedback-item .dots .dot.active {
+    background: #ffb900;
+    cursor: pointer;
+}
+
+.feedback .body {
+    width: 66%;
+}
+
+.feedback .body blockquote {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 153.846%; /* 153.846% */
 }
